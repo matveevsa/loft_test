@@ -206,6 +206,10 @@ html, body {
   color: #727272;
 }
 
+.about__link {
+  color: skyblue;
+}
+
 /********* COURSES ***********/
 
 .courses {
@@ -224,18 +228,30 @@ html, body {
 .courses__cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin-top: 42px;
+  margin-left: -10px;
 }
 
 .courses__card {
   margin-bottom: 50px;
   display: flex;
   flex-direction: column;
-  width: calc(100% / 3 - 13px);
+  width: calc(100% / 3 - 20px);
+  margin-left: 20px;
+
   box-shadow: 0 0 3px #ccc;
   background-color: #fff;
 }
+
+.courses__complete {
+  padding-left: 50px;
+
+  background-image: url('../img/complete.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  color: #8cc34b;
+}
+
 
 .card__image {
   display: block;
@@ -331,6 +347,7 @@ html, body {
 
 .card__checked {
   background-color: #edf5e3;
+  transition: 1s;
 }
 
 /******* FOOTER ***********/
